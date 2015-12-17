@@ -42,4 +42,3 @@ print("Guess a letter! Letters
 
 with open("everywordever.txt") as f:
     data = f.readlines()
-    print(data)
