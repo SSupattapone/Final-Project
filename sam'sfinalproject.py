@@ -1,9 +1,10 @@
 """
 Sam's Final Project
 Author: Sam Supattapone
-Credit: [none as of now]
+Credit: "Every Word Ever" website, 
 Description: Hangman.
 
+"""
 """
 name = input("Welcome, please enter your name: ")
 print(" ")
@@ -37,3 +38,8 @@ elif level == str(INSANE):
 
 print(" ")
 print("Guess a letter! Letters
+"""
+
+with open("everywordever.txt") as f:
+    data = f.readlines()
+    print(data)
