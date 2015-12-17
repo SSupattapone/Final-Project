@@ -38,4 +38,4 @@ elif level == str(INSANE):
     blankslvlINSANE = [ ]
 
 print(" ")
-print("Guess a letter! Letters
+print("Guess a letter!")
