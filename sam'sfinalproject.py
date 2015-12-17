@@ -5,7 +5,8 @@ Credit: "Every Word Ever" website,
 Description: Hangman.
 
 """
-"""
+with open("everywordever.txt") as f:
+    data = f.readlines()
 name = input("Welcome, please enter your name: ")
 print(" ")
 level = input(("Hello {0}, please select a level, 1, 2, 3, or INSANE: ").format(name))
@@ -38,7 +39,3 @@ elif level == str(INSANE):
 
 print(" ")
 print("Guess a letter! Letters
-"""
-
-with open("everywordever.txt") as f:
-    data = f.readlines()
