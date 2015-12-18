@@ -7,6 +7,8 @@ Description: Hangman.
 """
 with open("everywordever.txt") as f:
     data = f.readlines()
+    
+
 name = input("Welcome, please enter your name: ")
 print(" ")
 level = input(("Hello {0}, please select a level, 1, 2, 3, or INSANE: ").format(name))
@@ -38,4 +40,10 @@ elif level == str(INSANE):
     blankslvlINSANE = [ ]
 
 print(" ")
-print("Guess a letter!")
+
+
+if level == str(1):
+    import random
+
+    wordslvl1 = [data]
+    print(random.choice(data))
