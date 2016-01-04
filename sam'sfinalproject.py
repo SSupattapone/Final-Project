@@ -42,6 +42,8 @@ elif level == str(2):
     
     words = [data]
     ANS2 = (random.choice(data))
+    while (len(ANS1) - ANS1.count(' ')) not in [2,3]:
+        ANS2 = (random.choice(data))
 
 #________________________________________________________
 
