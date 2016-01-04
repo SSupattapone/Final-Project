@@ -19,20 +19,22 @@ print(" ")
 if level == str(1):
     import random
 
-    blankslvl1 = ['_ _', '_ _ _']
-    print(random.choice(blankslvl1))
+    blanks1 = ['_ _', '_ _ _']
+    random.choice(blanks1)
+    random.choice(blanks).count('_')
+
 
 elif level == str(2):
     import random
 
-    blankslvl2 = ['_ _ _ _', '_ _ _ _ _']
-    print(random.choice(blankslvl2))
+    blanks2 = ['_ _ _ _', '_ _ _ _ _']
+    print(random.choice(blanks2))
     
 elif level == str(3):
     import random
 
-    blankslvl3 = ['_ _ _ _ _ _', '_ _ _ _ _ _ _']
-    print(random.choice(blankslvl3))
+    blanks3 = ['_ _ _ _ _ _', '_ _ _ _ _ _ _']
+    print(random.choice(blanks3))
     
 elif level == str(INSANE):
     import random
@@ -46,4 +48,7 @@ if level == str(1):
     import random
 
     wordslvl1 = [data]
+    
     print(random.choice(data))
+
+
