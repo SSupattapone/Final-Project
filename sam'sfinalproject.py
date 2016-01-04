@@ -16,29 +16,48 @@ print(" ")
 print(("You have selceted level {0}. Here is the level {0} problem: ").format(level))
 print(" ")
 
+#________________________________________________________
+
+
 if level == str(1):
     import random
 
     blanks1 = ['_ _', '_ _ _']
-    b = random.choice(blanks1)
-    b.count('_')
+    b1 = random.choice(blanks1)
+    b1.count('_')
+    print(b1)
     
-    wordslvl1 = [data]
-    print(random.choice(data))
+    words = [data]
+    ANS1 = (random.choice(data))
 
+#________________________________________________________
 
 elif level == str(2):
     import random
 
     blanks2 = ['_ _ _ _', '_ _ _ _ _']
-    print(random.choice(blanks2))
+    b2 = random.choice(blanks2)
+    b2.count('_')
+    print(b2)
     
+    words = [data]
+    ANS2 = (random.choice(data))
+
+#________________________________________________________
+
 elif level == str(3):
     import random
 
     blanks3 = ['_ _ _ _ _ _', '_ _ _ _ _ _ _']
-    print(random.choice(blanks3))
+    b3 = random.choice(blanks3)
+    b3.count('_')
+    print(b3)
     
+    words = [data]
+    ANS3 = (random.choice(data))
+
+#________________________________________________________
+
 elif level == str(INSANE):
     import random
 
