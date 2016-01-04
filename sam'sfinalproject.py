@@ -20,8 +20,11 @@ if level == str(1):
     import random
 
     blanks1 = ['_ _', '_ _ _']
-    random.choice(blanks1)
-    random.choice(blanks).count('_')
+    b = random.choice(blanks1)
+    b.count('_')
+    
+    wordslvl1 = [data]
+    print(random.choice(data))
 
 
 elif level == str(2):
@@ -42,13 +45,6 @@ elif level == str(INSANE):
     blankslvlINSANE = [ ]
 
 print(" ")
-
-
-if level == str(1):
-    import random
-
-    wordslvl1 = [data]
     
-    print(random.choice(data))
 
 
