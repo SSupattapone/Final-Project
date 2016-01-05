@@ -13,7 +13,7 @@ name = input("Welcome, please enter your name: ")
 print(" ")
 level = input(("Hello {0}, please select a level, 1, 2, 3, or INSANE: ").format(name))
 print(" ")
-print(("You have selceted level {0}. Here is the level {0} problem: ").format(level))
+print(("You have selceted level {0}. GO: ").format(level))
 print(" ")
 
 #________________________________________________________
