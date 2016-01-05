@@ -32,6 +32,17 @@ if level == str(1):
         ANS1 = (random.choice(data))
         while (len(ANS1) - ANS1.count(' ')) != 2:
             ANS1 = (random.choice(data))
+            print(ANS1)
+
+    elif b1 == '_ _ _':
+        words = [data]
+        ANS1 = (random.choice(data))
+        while (len(ANS1) - ANS1.count(' ')) != 3:
+            ANS1 = (random.choice(data))
+
+    g1 = input("Guess a letter: ")
+    if str(g1) in ANS1:
+        ANS1.index(str(g1))
 
 #________________________________________________________
 
@@ -43,10 +54,17 @@ elif level == str(2):
     b2.count('_')
     print(b2)
     
-    words = [data]
-    ANS2 = (random.choice(data))
-    while (len(ANS2) - ANS2.count(' ')) not in [4,5]:
+    if b2 == '_ _ _ _':
+        words = [data]
         ANS2 = (random.choice(data))
+        while (len(ANS2) - ANS2.count(' ')) != 4:
+            ANS2 = (random.choice(data))
+
+    elif b2 == '_ _ _ _ _':
+        words = [data]
+        ANS2 = (random.choice(data))
+        while (len(ANS2) - ANS2.count(' ')) != 5:
+            ANS2 = (random.choice(data))
 
 #________________________________________________________
 
@@ -58,10 +76,17 @@ elif level == str(3):
     b3.count('_')
     print(b3)
     
-    words = [data]
-    ANS3 = (random.choice(data))
-    while (len(ANS3) - ANS3.count(' ')) not in [6,7]:
+    if b3 == '_ _ _ _ _ _':
+        words = [data]
         ANS3 = (random.choice(data))
+        while (len(ANS3) - ANS3.count(' ')) != 6:
+            ANS3 = (random.choice(data))
+    
+    elif b3 == '_ _ _ _ _ _ _':
+        words = [data]
+        ANS3 = (random.choice(data))
+        while (len(ANS3) - ANS3.count(' ')) != 7:
+            ANS3 = (random.choice(data))
 
 #________________________________________________________
 
