@@ -29,6 +29,8 @@ if level == str(1):
     
     words = [data]
     ANS1 = (random.choice(data))
+    while (len(ANS1) - ANS1.count(' ')) not in [2,3]:
+        ANS1 = (random.choice(data))
 
 #________________________________________________________
 
@@ -42,7 +44,7 @@ elif level == str(2):
     
     words = [data]
     ANS2 = (random.choice(data))
-    while (len(ANS1) - ANS1.count(' ')) not in [2,3]:
+    while (len(ANS2) - ANS2.count(' ')) not in [4,5]:
         ANS2 = (random.choice(data))
 
 #________________________________________________________
@@ -57,6 +59,8 @@ elif level == str(3):
     
     words = [data]
     ANS3 = (random.choice(data))
+    while (len(ANS3) - ANS3.count(' ')) not in [6,7]:
+        ANS3 = (random.choice(data))
 
 #________________________________________________________
 
