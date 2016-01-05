@@ -40,9 +40,12 @@ if level == str(1):
         while (len(ANS1) - ANS1.count(' ')) != 3:
             ANS1 = (random.choice(data))
 
-    g1 = input("Guess a letter: ")
-    if str(g1) in ANS1:
-        ANS1.index(str(g1))
+    while b1 != ANS1:
+        g1 = input("Guess a letter: ")
+        if str(g1) in ANS1:
+            p1 = ANS1.index(g1)
+            for n,c in enumerate(b1):
+                if n == p1
 
 #________________________________________________________
 
@@ -96,6 +99,5 @@ elif level == str(INSANE):
     blankslvlINSANE = [ ]
 
 print(" ")
-    
 
 
