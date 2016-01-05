@@ -27,10 +27,11 @@ if level == str(1):
     b1.count('_')
     print(b1)
     
-    words = [data]
-    ANS1 = (random.choice(data))
-    while (len(ANS1) - ANS1.count(' ')) not in [2,3]:
+    if b1 == '_ _':
+        words = [data]
         ANS1 = (random.choice(data))
+        while (len(ANS1) - ANS1.count(' ')) != 2:
+            ANS1 = (random.choice(data))
 
 #________________________________________________________
 
