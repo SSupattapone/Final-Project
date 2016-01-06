@@ -45,7 +45,9 @@ if level == str(1):
         if str(g1) in ANS1:
             p1 = ANS1.index(g1)
             for n,c in enumerate(b1):
-                if n == p1
+                if n == p1:
+                    c == g1
+                    print(b1)
 
 #________________________________________________________
 
