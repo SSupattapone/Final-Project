@@ -46,8 +46,8 @@ if level == str(1):
         if str(g1) in ANS1:
             p1 = ANS1.index(g1)
             for n,c in enumerate(b1):
-                if n == p1 and p1 != 0:
-                    print(b1[:p1]+' '+g1)
+                if n == p1 and p1 != 0 and p1 != len(ANS1)-1:
+                    print(b1[:p1]+' '+g1+b1[p1+2:])
 
 #________________________________________________________
 
@@ -70,6 +70,14 @@ elif level == str(2):
         ANS2 = (random.choice(data))
         while (len(ANS2) - ANS2.count(' ')) != 5:
             ANS2 = (random.choice(data))
+
+    while b2 != ANS2:
+        g2 = input("Guess a letter: ")
+        if str(g2) in ANS2:
+            p2 = ANS2.index(g2)
+            for n,c in enumerate(b2):
+                if n == p2 and p2 != 0 and p2 != len(ANS2)-1:
+                    print(b2[:p2]+' '+g2+b2[p2+2:])
 
 #________________________________________________________
 
