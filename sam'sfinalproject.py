@@ -32,12 +32,14 @@ if level == str(1):
         ANS1 = (random.choice(data))
         while (len(ANS1) - ANS1.count(' ')) != 2:
             ANS1 = (random.choice(data))
+            print(ANS1)
 
     elif b1 == '_ _ _':
         words = [data]
         ANS1 = (random.choice(data))
         while (len(ANS1) - ANS1.count(' ')) != 3:
             ANS1 = (random.choice(data))
+            print(ANS1)
 
     while b1 != ANS1:
         g1 = input("Guess a letter: ")
@@ -45,7 +47,7 @@ if level == str(1):
             p1 = ANS1.index(g1)
             for n,c in enumerate(b1):
                 if n == p1:
-                    print(b1[:p1]+g1+b1[p1:])
+                    print(b1[:p1]+' '+g1+b1[p1:])
 
 #________________________________________________________
 
