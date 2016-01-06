@@ -32,7 +32,6 @@ if level == str(1):
         ANS1 = (random.choice(data))
         while (len(ANS1) - ANS1.count(' ')) != 2:
             ANS1 = (random.choice(data))
-            print(ANS1)
 
     elif b1 == '_ _ _':
         words = [data]
