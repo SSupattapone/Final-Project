@@ -45,8 +45,9 @@ if level == str(1):
             p1 = ANS1.index(g1)
             for n,c in enumerate(b1):
                 if n == p1:
-                    c == g1
-                    print(b1)
+                    b1a = [:p1]
+                    b1b = [p1:]
+                    print(b1a[:p1]+g1+b1b[p1:])
 
 #________________________________________________________
 
