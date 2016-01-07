@@ -77,7 +77,7 @@ elif level == str(2):
             p2 = ANS2.index(g2)
             for n,c in enumerate(b2):
                 if n == p2 and p2 != 0 and p2 != len(ANS2)-1:
-                    b2 = b2[:p2]+' '+g2+b2[p2+2:]
+                    b2 = b2[:p2]+g2+b2[p2+2:]
                     print(b2)
                     
 
