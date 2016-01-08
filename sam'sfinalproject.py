@@ -48,6 +48,10 @@ if level == str(1):
             for n,c in enumerate(b1):
                 if n == p1 and p1 != 0 and p1 != len(ANS1)-1:
                     print(b1[:p1]+' '+g1+b1[p1+2:])
+                if n == p1 and p1 == 0:
+                    print(g1+b1[p1+2:])
+                if n == p1 and p1 == len(ANS1)-1:
+                    print(b1[:p1]+' '+g1)
 
 #________________________________________________________
 
