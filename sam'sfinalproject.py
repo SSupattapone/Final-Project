@@ -83,6 +83,10 @@ elif level == str(2):
                 if n == p2 and p2 != 0 and p2 != len(ANS2)-1:
                     b2 = b2[:p2]+g2+b2[p2+2:]
                     print(b2)
+                if n == p2 and p2 == 0:
+                    print(g1+b2[p1+2:])
+                if n == p2 and p2 == len(ANS2)-1:
+                    print(b2[:p2]+' '+g2)
                     
 
 #________________________________________________________
