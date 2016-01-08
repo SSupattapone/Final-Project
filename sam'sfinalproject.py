@@ -84,7 +84,7 @@ elif level == str(2):
                     b2 = b2[:p2]+g2+b2[p2+2:]
                     print(b2)
                 if n == p2 and p2 == 0:
-                    print(g1+b2[p1+2:])
+                    print(g2+b2[p1+2:])
                 if n == p2 and p2 == len(ANS2)-1:
                     print(b2[:p2]+' '+g2)
                     
@@ -111,6 +111,19 @@ elif level == str(3):
         while (len(ANS3) - ANS3.count(' ')) != 7:
             ANS3 = (random.choice(data))
 
+    while b3 != ANS3:
+        g3 = input("Guess a letter: ")
+        if str(g3) in ANS3:
+            p3 = ANS3.index(g3)
+            for n,c in enumerate(b3):
+                if n == p3 and p3 != 0 and p3 != len(ANS3)-1:
+                    b3 = b3[:p3]+g3+b3[p3+2:]
+                    print(b3)
+                if n == p3 and p3 == 0:
+                    print(g3+b3[p3+2:])
+                if n == p3 and p3 == len(ANS3)-1:
+                    print(b3[:p3]+' '+g3)
+                    
 #________________________________________________________
 
 elif level == str(INSANE):
